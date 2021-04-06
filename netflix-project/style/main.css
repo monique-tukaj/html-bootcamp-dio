@@ -1,0 +1,136 @@
+:root{
+    --red:#E50914;
+    --black:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base elements */
+body {
+   background:var(--black);
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* This property allows to have an space between logo and menu */
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /* Everytime the mouse hover over the menu the color changes*/
+    color:#fff;
+}
+
+/* main movie */
+
+.main-movie{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/cover-tbbt.jpg); /* The property linear gradient enables the cover picture to be a little bit transparent for the overview to stand out  */
+    
+
+    height: 400px;
+    background-size: cover; /* The image will fit inside the box */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.main-movie .overview{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-movie .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgba(148, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-bottom: 35px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all; /* Responsible for the time between one animation and another animation */
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-right: 5px; /* Add space after the icon from font awesome */
+}
+
+.container {
+    margin-left: 20px; /* All the elements inside the container was edited */
+}
+
+.main-movie .container {
+    width: 70%; /* Only the main movie container was modified*/
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-movie {
+    margin-top: 5px;
+
+}
+
+.sections {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.signature{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.social-media{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-media a{
+    color:whitesmoke;
+    text-decoration: none;
+}
